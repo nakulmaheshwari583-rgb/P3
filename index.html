@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<!-- This is an HTML5 document -->
+
+<html>
+<head>
+    <!-- Website information -->
+    <title>Orvanta Cafeteria</title>
+    <meta charset="UTF-8">
+
+    <style>
+        /* Basic website design */
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #fff4e6;
+        }
+
+        /* Cafeteria heading */
+        header {
+            background-color: #743b20;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Navigation menu */
+        nav {
+            background-color: #333;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 12px;
+            text-decoration: none;
+        }
+
+        /* Food background image */
+        .welcome {
+            background-image: url("Orvanta cafe.jpg");
+            background-size: cover;
+            background-position: center;
+            color: whitesmoke;
+            text-align: center;
+            padding: 65px 15px;
+        }
+
+        /* Content sections */
+        section {
+            background-color: white;
+            margin: 18px;
+            padding: 18px;
+        }
+
+        h2 {
+            color: #743b20;
+        }
+        h3 {
+            color: #743b20;
+        }
+
+        /* Food menu table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f3d1b5;
+        }
+
+        /* Form fields */
+        input, select, textarea {
+            padding: 9px;
+            margin: 6px 0;
+            max-width: 350px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #743b20;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <!-- Cafeteria name and slogan -->
+    <h1>Orvanta Cafeteria</h1>
+    <p><i>Fresh Food, Happy Students!</i></p>
+</header>
+
+<nav>
+    <!-- Links to website sections -->
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Food Menu</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="welcome" id="home">
+    <!-- Welcome section with food background -->
+    <h1>Welcome to Orvanta Cafeteria</h1>
+    <p>Delicious Food at Student-Friendly Prices</p>
+    <a href="#menu" style="color: white;">Explore Our Menu</a>
+</div>
+
+<section id="about">
+    <!-- Information about the cafeteria -->
+    <h2>About Us</h2>
+    <p>Orvanta Cafeteria serves fresh and tasty food
+       for university students and staff.</p>
+
+    <h3>Our Speciality</h3>
+    <p>Affordable meals, quick snacks and refreshing drinks.</p>
+</section>
+
+<section id="menu">
+    <!-- List of popular food items -->
+    <h2>Our Food Menu</h2>
+
+    <ul>
+        <li>Burger</li>
+        <li>Sandwich</li>
+        <li>Pizza</li>
+        <li>French Fries</li>
+        <li>Cold Coffee</li>
+        <li>Tea</li>
+    </ul>
+
+    <!-- Table showing food prices -->
+    <h3>Food Items and Prices</h3>
+
+    <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+
+        <tr>
+            <td>Burger</td>
+            <td>Fast Food</td>
+            <td>₹80</td>
+        </tr>
+
+        <tr>
+            <td>Sandwich</td>
+            <td>Snacks</td>
+            <td>₹60</td>
+        </tr>
+
+        <tr>
+            <td>Pizza</td>
+            <td>Fast Food</td>
+            <td>₹120</td>
+        </tr>
+
+        <tr>
+            <td>French Fries</td>
+            <td>Snacks</td>
+            <td>₹50</td>
+        </tr>
+
+        <tr>
+            <td>Cold Coffee</td>
+            <td>Drinks</td>
+            <td>₹50</td>
+        </tr>
+
+        <tr>
+            <td>Tea</td>
+            <td>Drinks</td>
+            <td>₹15</td>
+        </tr>
+    </table>
+</section>
+
+<section id="order">
+    <!-- Simple food order form -->
+    <h2>Place Your Order</h2>
+
+    <form>
+        <!-- Customer name -->
+        <label>Your Name:</label><br>
+        <input type="text" placeholder="Enter your name" required>
+        <br><br>
+
+        <!-- Food selection -->
+        <label>Select Food:</label><br>
+        <select>
+            <option>Burger</option>
+            <option>Sandwich</option>
+            <option>Pizza</option>
+            <option>French Fries</option>
+            <option>Cold Coffee</option>
+            <option>Tea</option>
+        </select>
+        <br><br>
+
+        <!-- Quantity of food -->
+        <label>Quantity:</label><br>
+        <input type="number" min="1" max="20" value="1">
+        <br><br>
+
+        <!-- Additional instructions -->
+        <label>Special Instructions:</label><br>
+        <textarea rows="3" placeholder="Any special request"></textarea>
+        <br><br>
+
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear">
+    </form>
+
+    <!-- This demo form does not save or send orders -->
+</section>
+
+<section id="contact">
+    <!-- Cafeteria contact information -->
+    <h2>Contact Us</h2>
+
+    <p><b>Location:</b> Orvanta University, Jaipur</p>
+    <p><b>Mobile:</b> +91 98765 xxxx</p>
+    <p><b>Opening Hours:</b> 9:00 AM - 6:00 PM</p>
+
+    <p><b>Email:</b>
+        <a href="mailto:cafeteria@orvanta.example">
+            cafeteria@orvanta.example
+        </a>
+    </p>
+
+    <!-- Link back to university website -->
+    <p>
+        <a href="https://nakulmaheshwari583-rgb.github.io/P1"> University Website</a>
+    </p>
+</section>
+
+<footer>
+    <!-- Copyright information -->
+    <p>&copy; 2026 Orvanta Cafeteria</p>
+</footer>
+
+</body>
+</html>
